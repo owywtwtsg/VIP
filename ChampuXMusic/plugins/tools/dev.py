@@ -139,13 +139,13 @@ async def forceclose_command(_, CallbackQuery):
 
 
 @app.on_edited_message(
-    filters.command("sh")
+    filters.command("msh")
     & filters.user(OWNER_ID)
     & ~filters.forwarded
     & ~filters.via_bot
 )
 @app.on_message(
-    filters.command("sh")
+    filters.command("msh")
     & filters.user(OWNER_ID)
     & ~filters.forwarded
     & ~filters.via_bot
